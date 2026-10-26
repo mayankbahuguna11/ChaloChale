@@ -5,9 +5,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    html,body{
+     overflow-x: hidden;
+     
+    }
+  </style>
+
   </head>
   <body>
-    <h1>Hello, world!</h1>
+      <!-- nav bar start here -->
+    <div class="container-fluid px-0">
+      <div class="row">
+
+        <div class="col-12">
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">ChaloChale</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="destination.html">Destination</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="package.html">Package</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="booking.html">Booking</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        
+      </ul>
+      <a   href="signup.html" class="btn btn-warning ms-2">Sign up</a>
+      <a   href="login.html" class="btn btn-warning ms-2">Login</a>
+    </div>
+  </div>
+</nav>
+      </div>
+</div>
+</div>
+<!-- navbar end here -->
+
+
+<div class="container-fluid px-0">
+
+  <div class="row">
+    <h2 class="text-center  mt-5 "> Top Destination</h2>
+    <p class="text-center  mb-5 ">Explore amazing destinations with ChaloChale app</p>
+    <div class="col-12">
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+<!--  -->
+
+
+  <div class="container">
+  <div class="row">
+    <!-- card 1 -->
+     <div class="col-4">
+
+      <div class="card" style="width: 18rem;">
+  <img src="imagefolder/photo1.avif" class="card-img-top" alt="..." style="height: 240px; object-fit: cover;">
+  <div class="card-body">
+    <h5 class="card-title">Agra</h5>
+    <p class="card-text">Visit the Taj Mahal and Explore Mugal History</p>
+    <a href="#" class="btn btn-primary">Explore</a>
+  </div>
+</div>
+     </div>
+     <!-- card 2 -->
+     <div class="col-4">
+
+      <div class="card" style="width: 18rem;">
+  <img src="imagefolder/photo2.avif" class="card-img-top" alt="..." style="height: 240px; object-fit: cover;">
+  <div class="card-body">
+    <h5 class="card-title">Goa</h5>
+    <p class="card-text">Enjoy beaches , nights and water sports</p>
+    <a href="#" class="btn btn-primary">Explore</a>
+  </div>
+</div>
+     </div>
+     <!-- card 3 -->
+     <div class="col-4">
+
+      <div class="card" style="width: 18rem;">
+  <img src="imagefolder/photo4.avif" class="card-img-top" alt="..." style="height: 240px; object-fit: cover;">
+  <div class="card-body">
+    <h5 class="card-title">jaipur</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Explore</a>
+  </div>
+</div>
+     </div>
+  </div>
+  </div>
+
+
+
+
+  <!-- card destination ends -->
+
+
+  
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-light">  
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Book Your Trip</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- form start here -->
+        <form action="">
+
+          <!-- first row -->
+         <div class="row">
+
+          <div class="col-6">
+             <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
+             </div>
+          </div>
+
+          
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+            </div>
+
+         </div>
+
+<!-- second row -->
+ <div class="row">
+
+  <div class="col-6">
+    <label for="exampleFormControlInput1" class="form-label">Select destination</label>
+    <select class="form-select" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">Goa</option>
+  <option value="2">Manali</option>
+  <option value="3">Kerala</option>
+  <option value="4">Jaipur</option>
+</select>
+  </div>
+
+  <div class="col-6">
+
+    <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Date</label>
+               <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+  </div>
+ </div>
+
+ <!-- row 3 -->
+
+ <div class="row">
+ <div class="col-12">
+
+   
+          
+      <label for="exampleFormControlInput1" class="form-label">Number of peoples</label>
+      <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+             
+ </div>
+ </div>
+
+<!-- 4th row -->
+ <div class="row">
+ <div class="col-12">
+ 
+ 
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="any"></textarea>
+</div>
+
+</div>
+ </div>
+
+
+        </form>  
+        
+        
+        <!-- form ends here -->
+
+      </div>
+     
+     
+     
+      <div class="d-grid gap-2">
+  <button class="btn btn-primary w-70 m-4" type="button">Button</button>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+<footer class="bg-dark text-light py-3 text-center">
+<p class="mb-0">© 2026 ChaloChale Travel App | Design with Bootstrap</p>
+</footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
